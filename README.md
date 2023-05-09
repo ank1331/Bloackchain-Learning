@@ -22,3 +22,7 @@
 4. Fallback funcition similar to receive function, par jab hum transtact mai data daalte hai to solidty contract mai receive ke alava koi aur function dekhta hai and agar koi function nahi milata to we go to fallback function
   1. fallback() external payable{} 
  ************************** video done till 5:30:44 ***********************************************************
+ 
+ ### 10th May
+ 1. How to debug error
+ 2. updated Git with latest code for fund me code
