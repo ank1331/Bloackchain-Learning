@@ -10,10 +10,13 @@
   1. Constant - agar koi variable change nahi ho raha and is outside function then put constant before that, you will save gas
   2. e.g uint public constant name_of_variable = 50;
   1. Immutable - voh function jinhe hum uss line mai declare nahi karte 
-  2. uint public name;
-  3. contructor(){name = "test";}
-  4. inn variables ko jo ki constant hote hai, we make immutable
-  5. e.g uint public immutable name;
+  ``` solidity
+   uint public name;
+   contructor(){name = "test";}
+   ```
+  
+  5. inn variables ko jo ki constant hote hai, we make immutable
+  6. e.g uint public immutable name;
 2. Error handling 
   1. error notOwner();
   2. if (msg.owner != owner) {revert NotOwner()}
