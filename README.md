@@ -19,10 +19,10 @@
   6. e.g uint public immutable name;
 2. Error handling 
 
-   ``` solidity
-  error notOwner();
-  if (msg.owner != owner) {revert NotOwner()}
-   ```
+  ``` solidity
+   error notOwner();
+   if (msg.owner != owner) {revert NotOwner()}
+  ```
 3. Receive Function
   1. receive() external payable{}, yeh function trigger hota hai jab bhi hum transtion mai value nahi daalte and koi bhi amount from 0 to infity ka transtin karte hai
 4. Fallback funcition similar to receive function, par jab hum transtact mai data daalte hai to solidty contract mai receive ke alava koi aur function dekhta hai and agar koi function nahi milata to we go to fallback function
