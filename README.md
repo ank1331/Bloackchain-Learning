@@ -33,3 +33,6 @@
  1. How to debug error
  2. updated Git with latest code for fund me code
  ************************** video done till 5:53:52 ***********************************************************
+
+### 12th May
+1. Ubuntu installed 
