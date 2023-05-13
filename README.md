@@ -36,3 +36,6 @@
 
 ### 12th May
 1. Ubuntu installed 
+
+### 13th May
+1. Going through the block chain bootcamp course
