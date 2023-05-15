@@ -39,3 +39,6 @@
 
 ### 13th May
 1. Going through the block chain bootcamp course
+
+### 15th May
+1. Going thorugh Block chain bootcamp
