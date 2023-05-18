@@ -42,3 +42,6 @@
 
 ### 15th May
 1. Going thorugh Block chain bootcamp
+
+### 18th May
+1. Nothing
