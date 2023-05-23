@@ -45,3 +45,5 @@
 
 ### 18th May
 1. Nothing
+### 23rd May
+1. Blockchain Security course
