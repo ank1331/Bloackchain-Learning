@@ -49,3 +49,5 @@
 1. Blockchain Security course
 ### 24th May
 1. Block Chain Security course continues
+### 25th May
+1. Block chain security course
