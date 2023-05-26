@@ -51,3 +51,6 @@
 1. Block Chain Security course continues
 ### 25th May
 1. Block chain security course
+### 26th May
+1. worked on Block chain video and running the solidity code on VS code
+
