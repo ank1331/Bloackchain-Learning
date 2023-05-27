@@ -60,17 +60,21 @@
 4. Javascript mai sab kuch ek main functions mai daalo and then run karo
 5. 
 6.Setps: 
-                  ###Remix                       |                  ###JavaScript
+                  ### Remix                        |                  ### JavaScript
             1. sabse pehele compile karte hai     |    1. isme complile karne ke liye **solc** package use karte hai
                 code                              |
                                                   |    2. Ganache fake blockchain hoti hai jo locally run hoti hai, we can use it to deploy code
                                                   |        we can use HardHat also iski jagah
-                                                  |
-                                                  |
-                                                  |
-                                                  |
-                                                  |
-                                                  |
-                                                  |
-                                                  |
-                                                  |
+    
+    
+        2. Jab apan run karte hai javascript VM pe, to remix fake blockchain bana ke uspe run karta hai
+        3. jab apan web injectd web 3 pe run karte hai to voh meta mask pe jo n/w apan ne choose kiya hai usse RPC URL se connect karta hai
+        RPC - Remote Procedure Call
+        Yeh RPC url hume ek blockchain node se connect karata hai
+        Yeh blockchain node - Basically ek computer jo yeh api(RPC URL) ko dikhata hai, ki bhai isse connect karna hai to kar lo
+        apan ganache ka http server JS code mai daalte hai, jisse usse call kar paye 
+        **ethers.js** yeh hume api call karne mai use karti hai, 
+              API call kyu karne hai -- different blockchain se connect karne ko
+              isme kya hota hai -- Wrapper function jo api calls karta hai( yeh wrapper mai axios jaise hote hai jo api call karte hai)
+              
+        
