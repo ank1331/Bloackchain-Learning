@@ -60,7 +60,17 @@
 4. Javascript mai sab kuch ek main functions mai daalo and then run karo
 5. 
 6.Setps: 
-                  Remix                           |                       JavaScript
+                  ###Remix                       |                  ###JavaScript
             1. sabse pehele compile karte hai     |    1. isme complile karne ke liye **solc** package use karte hai
                 code                              |
-
+                                                  |    2. Ganache fake blockchain hoti hai jo locally run hoti hai, we can use it to deploy code
+                                                  |        we can use HardHat also iski jagah
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
+                                                  |
