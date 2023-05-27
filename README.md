@@ -53,4 +53,6 @@
 1. Block chain security course
 ### 26th May
 1. worked on Block chain video and running the solidity code on VS code
+### 27th May
+1. video 6hours 18 mins ke aage --- lets see aaj kitna hota hai
 
