@@ -55,4 +55,12 @@
 1. worked on Block chain video and running the solidity code on VS code
 ### 27th May
 1. video 6hours 18 mins ke aage --- lets see aaj kitna hota hai
+2. Remix mai hum bus compile button dabate hai and deploy kar dete hai 
+3. Hum yeh functions javascript mai banayege in VScode
+4. Javascript mai sab kuch ek main functions mai daalo and then run karo
+5. 
+6.Setps: 
+                  Remix                           |                       JavaScript
+            1. sabse pehele compile karte hai     |    1. isme complile karne ke liye **solc** package use karte hai
+                code                              |
 
