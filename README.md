@@ -65,11 +65,10 @@
                 code                              |
                                                   |    2. Ganache fake blockchain hoti hai jo locally run hoti hai, we can use it to deploy code
                                                   |        we can use HardHat also iski jagah
-    
-    
-        2. Jab apan run karte hai javascript VM pe, to remix fake blockchain bana ke uspe run karta hai
-        3. jab apan web injectd web 3 pe run karte hai to voh meta mask pe jo n/w apan ne choose kiya hai usse RPC URL se connect karta hai
-        RPC - Remote Procedure Call
+       
+ 2. Jab apan run karte hai javascript VM pe, to remix fake blockchain bana ke uspe run karta hai
+ 3. jab apan web injectd web 3 pe run karte hai to voh meta mask pe jo n/w apan ne choose kiya hai usse RPC URL se connect karta hai
+  RPC - Remote Procedure Call
         Yeh RPC url hume ek blockchain node se connect karata hai
         Yeh blockchain node - Basically ek computer jo yeh api(RPC URL) ko dikhata hai, ki bhai isse connect karna hai to kar lo
         apan ganache ka http server JS code mai daalte hai, jisse usse call kar paye 
