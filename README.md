@@ -86,3 +86,6 @@
       ```
       
   3. We have created env variable file to store the variables
+*********************************
+Deploying on Rinkby network from Ganache
+
