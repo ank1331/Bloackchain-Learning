@@ -58,16 +58,15 @@
 2. Remix mai hum bus compile button dabate hai and deploy kar dete hai 
 3. Hum yeh functions javascript mai banayege in VScode
 4. Javascript mai sab kuch ek main functions mai daalo and then run karo
-5. 
-6.Setps: 
+5.Setps: 
                   ### Remix                        |                  ### JavaScript
             1. sabse pehele compile karte hai     |    1. isme complile karne ke liye **solc** package use karte hai
                 code                              |
                                                   |    2. Ganache fake blockchain hoti hai jo locally run hoti hai, we can use it to deploy code
                                                   |        we can use HardHat also iski jagah
        
- 2. Jab apan run karte hai javascript VM pe, to remix fake blockchain bana ke uspe run karta hai
- 3. jab apan web injectd web 3 pe run karte hai to voh meta mask pe jo n/w apan ne choose kiya hai usse RPC URL se connect karta hai
+ 6. Jab apan run karte hai javascript VM pe, to remix fake blockchain bana ke uspe run karta hai
+ 7. jab apan web injectd web 3 pe run karte hai to voh meta mask pe jo n/w apan ne choose kiya hai usse RPC URL se connect karta hai
   RPC - Remote Procedure Call
         Yeh RPC url hume ek blockchain node se connect karata hai
         Yeh blockchain node - Basically ek computer jo yeh api(RPC URL) ko dikhata hai, ki bhai isse connect karna hai to kar lo
@@ -75,5 +74,15 @@
         **ethers.js** yeh hume api call karne mai use karti hai, 
               API call kyu karne hai -- different blockchain se connect karne ko
               isme kya hota hai -- Wrapper function jo api calls karta hai( yeh wrapper mai axios jaise hote hai jo api call karte hai)
-              
+ 
+ ### 28th May
+ 1. Hum reterieve use karte hai, to get the value
+ 2. Update karege contract to store favourite number as 8
+      ```solidity
+      const tranResponse = await contract.store("7")
+      const tranReceipt = await tranResponse.wait(1)
+      const updatedNum = await contract.retrieve()
+      console.log(`updated Number ${updatedNum}`)
+      ```
+      
         
