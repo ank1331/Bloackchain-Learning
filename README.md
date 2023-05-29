@@ -89,4 +89,6 @@
 *********************************
 Deploying on Rinkby network from Ganache
 ########################### Learning Hard hat ###################################
+### 29th May
+1. Start learning Hardhat
 
