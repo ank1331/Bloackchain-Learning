@@ -93,5 +93,11 @@ Deploying on Rinkby network from Ganache
 1. Start learning Hardhat
 2. Completed till 9 hours 06 mins
 ### 30th May
-1. 
+1. COntract create kiya
+2. rinkyby ke details se contract deploy kiya
+3. verify kiya contract 
+4. Hardhat mai custoom task likh rahe hai
+5. humne local host ka env banaya and use kiya account and eth given by hardhat
+6. console mai editi ki
+7. test script likhi
 
