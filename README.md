@@ -103,4 +103,5 @@ Deploying on Rinkby network from Ganache
 8.video completed till 9:30 -- but see how do we test part from starting
 ### 31st May
 1. Need to work on course.. not working doing office work
+2. completed till 9:38. How test cases are written and executed , we used chai and assert and expect key word. did not write the test casess though. Need to start Hardhat Gas reporter.
 
