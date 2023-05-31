@@ -100,4 +100,5 @@ Deploying on Rinkby network from Ganache
 5. humne local host ka env banaya and use kiya account and eth given by hardhat
 6. console mai editi ki
 7. test script likhi
+8.video completed till 9:30 -- but see how do we test part from starting
 
