@@ -101,4 +101,6 @@ Deploying on Rinkby network from Ganache
 6. console mai editi ki
 7. test script likhi
 8.video completed till 9:30 -- but see how do we test part from starting
+### 31st May
+1. Need to work on course.. not working doing office work
 
