@@ -110,5 +110,6 @@ Deploying on Rinkby network from Ganache
 3. con market API use karte hai so as to get the USD conversion of gas to USD 
 4. Next topic solidity coverage - - this goes through our solidity code and hume batata hai ki hum ne jo test likhe hai usme kitni lines nahi cover ho rahi, matlab ki bhai yeh do lines tum test nai kar rahe ho aise( yarn --dev solidity-coverage)
 5. reached 9:45
-6. 
+6. https://github.com/othneildrew/Best-README-Template/         --------- for improving the README document
+7. completed till 10:00---------------------------------------------
 
