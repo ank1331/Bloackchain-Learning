@@ -112,4 +112,5 @@ Deploying on Rinkby network from Ganache
 5. reached 9:45
 6. https://github.com/othneildrew/Best-README-Template/         --------- for improving the README document
 7. completed till 10:00---------------------------------------------
-
+### 2nd June
+1. Hardhat Fund Me ---- Project
