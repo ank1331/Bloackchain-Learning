@@ -119,3 +119,4 @@ Deploying on Rinkby network from Ganache
 4.  reached 11:00
 ### 3rd June
 1. continue on the video
+2. Connect to metamask
