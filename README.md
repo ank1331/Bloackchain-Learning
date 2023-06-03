@@ -114,3 +114,8 @@ Deploying on Rinkby network from Ganache
 7. completed till 10:00---------------------------------------------
 ### 2nd June
 1. Hardhat Fund Me ---- Project
+2. Linting --- Process to check the code for error and does formatting also. we use Sollint, which is used for linting code. ESlint is used for linting javaScript code
+3. hardhat-deploy apan yeh package use karte hai kyuki for deploying things its not that easy
+4.  reached 11:00
+### 3rd June
+1. continue on the video
