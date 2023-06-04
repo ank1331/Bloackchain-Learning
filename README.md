@@ -120,3 +120,5 @@ Deploying on Rinkby network from Ganache
 ### 3rd June
 1. continue on the video
 2. Connect to metamask
+### 4th June
+1. Lottery Project
