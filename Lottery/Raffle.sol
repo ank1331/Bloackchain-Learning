@@ -4,6 +4,7 @@ pragma solidity ^0.8.7;
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 error Raffle_notenoughethentered();
+error Raffle_TransferedFailed();
 
 contract Raffle is VRFConsumerBaseV2 {
     /*State Variables*/
@@ -18,6 +19,9 @@ contract Raffle is VRFConsumerBaseV2 {
 
     event Raffleenter(address indexed player);
     event RequestRaffleWinner(uint256 indexed requesId);
+    event WinnerPicked(address indexed winner);
+
+    address private s_recentWinner;
 
     constructor(
         address VRFCoordinatorV2,
@@ -55,10 +59,23 @@ contract Raffle is VRFConsumerBaseV2 {
     }
 
     function fulfillRandomWords(
-        uint256 requestId,
+        uint256 /*requestId*/,
         uint256[] memory randomWords
     ) internal override {
-        
+        uint256 indexOfWinner = randomWords[0]%s_players.length;
+        address payable recentWinner = s_players[indexOfWinner];
+        s_recentWinner = recentWinner;
+
+        // abb isko paise dena hai sare
+        (bool success, ) = recentWinner.call{value: address(this).balance}("");
+
+        if(!success){
+            revert Raffle_TransferedFailed();
+        }
+
+        emit WinnerPicked(recentWinner);
+
+
     }
 
     function getEntranceFee() public view returns (uint256) {
@@ -67,5 +84,9 @@ contract Raffle is VRFConsumerBaseV2 {
 
     function getPlayer(uint256 index) public view returns (address) {
         return s_players[index];
+    }
+
+    function getRecentWinner() public view returns(address){
+        return s_recentWinner;
     }
 }
