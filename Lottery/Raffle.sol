@@ -3,10 +3,16 @@ pragma solidity ^0.8.7;
 
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol";
 error Raffle_notenoughethentered();
 error Raffle_TransferedFailed();
 
-contract Raffle is VRFConsumerBaseV2 {
+contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
+    enum RaffleState{
+        OPEN,
+        CALCULATING
+    }// yeh basically 2 state batata hai, 0 is OPEN and 1 is calculating
+
     /*State Variables*/
     uint256 private immutable i_entranceFee;
     address payable[] private s_players;
@@ -44,6 +50,8 @@ contract Raffle is VRFConsumerBaseV2 {
         s_players.push(payable(msg.sender));
         emit Raffleenter(msg.sender);
     }
+
+    function checkUpKeep(bytes calldata checkData) external override{}
 
     function requestRandomWinner() external {
         // request random number
