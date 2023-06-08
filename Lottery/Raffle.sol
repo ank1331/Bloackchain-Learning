@@ -4,12 +4,13 @@ pragma solidity ^0.8.7;
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol";
+
 error Raffle_notenoughethentered();
 error Raffle_TransferedFailed();
 error Raffle_NotOpen();
 error Raffle_UpkeepNotNeeded(uint256 currentBalance, uint256 numPlayers, uint256 raffleState);
 
-contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
+abstract contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface{
     enum RaffleState{
         OPEN,
         CALCULATING
@@ -64,7 +65,7 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
         emit Raffleenter(msg.sender);
     }
 
-    function checkUpKeep(bytes calldata /*checkData*/) public override returns(bool upkeepNeeded, bytes memory /*performData*/){
+    function checkUpKeep(bytes memory /*checkData*/) public returns(bool upkeepNeeded, bytes memory /*performData*/){
         bool isOpen = (RaffleState.OPEN==s_raffleState);
         bool timePassed = ((block.timestamp - s_lastTimeStamp)>i_interval);
         bool hasPlayers = (s_players.length >0);
@@ -75,7 +76,9 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
     function performUpkeep(bytes calldata /*performData*/) external override {
         // request random number
         // do something with the number
-        (bool upkeepNeeded, ) = checkUpKeep("");
+        (bool upkeepNeeded, ) = checkUpKeep(bytes(" "));
+
+
         if(!upkeepNeeded){
             revert Raffle_UpkeepNotNeeded(address(this).balance, s_players.length, uint256(s_raffleState));
         }
@@ -123,4 +126,20 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
     function getRecentWinner() public view returns(address){
         return s_recentWinner;
     }
+
+    function getRaffleState() public view returns(RaffleState){
+        return s_raffleState;
+    }
+
+    function getNumberofPlayers() public view returns(uint256){
+        return s_players.length;
+    }
+    function getLatestTimestpamp() public view returns(uint256){
+        return s_lastTimeStamp;
+    }
+
+    function getRequestConfirmations() public view returns(uint256){
+        return REQUEST_CONFIRMATION;
+    }
+
 }
