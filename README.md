@@ -122,3 +122,6 @@ Deploying on Rinkby network from Ganache
 2. Connect to metamask
 ### 4th June
 1. Lottery Project
+### 12th June
+1. Worked on the video and reached 19:09 hours
+
