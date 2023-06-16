@@ -53,7 +53,7 @@ contract favouriteNum{
     function sumoftwonum() public view returns(uint256 number){
         return sumofnums;
     }
-
+# Practicing on solidity
 
 
 }
