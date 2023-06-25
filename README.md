@@ -124,4 +124,7 @@ Deploying on Rinkby network from Ganache
 1. Lottery Project
 ### 12th June
 1. Worked on the video and reached 19:09 hours
-
+*********************** 
+### 26th June
+1. Watched the video once
+2. Hardhat starts at 8:23
