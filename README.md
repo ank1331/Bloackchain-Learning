@@ -4,7 +4,7 @@
 8th May - 
 1. Learned about Modifier 
 2. How to transfer money from one account to another
-3. how to create fund transfer function
+3. how to create fund transfer function.
 9th May - 
 1. Studying Constant and immutable key word
   1. Constant - agar koi variable change nahi ho raha and is outside function then put constant before that, you will save gas
