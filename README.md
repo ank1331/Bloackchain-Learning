@@ -128,3 +128,5 @@ Deploying on Rinkby network from Ganache
 ### 26th June
 1. Watched the video once
 2. Hardhat starts at 8:23
+### 3rd July
+1. working on things again
