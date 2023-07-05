@@ -130,3 +130,5 @@ Deploying on Rinkby network from Ganache
 2. Hardhat starts at 8:23
 ### 3rd July
 1. working on things again
+### 5th July
+1. Updated the code
