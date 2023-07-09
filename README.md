@@ -132,3 +132,5 @@ Deploying on Rinkby network from Ganache
 1. working on things again
 ### 5th July
 1. Updated the code
+### 9th July 
+1.  Start working on my website 
