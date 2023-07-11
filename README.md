@@ -133,4 +133,6 @@ Deploying on Rinkby network from Ganache
 ### 5th July
 1. Updated the code
 ### 9th July 
-1.  Start working on my website 
+1.  Start working on my website
+### 11th July 
+1. Did not work on code
